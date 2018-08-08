@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2e2e2e"
+    android:gravity="center_horizontal"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="508px"
+        android:layout_height="423px"
+        android:layout_marginTop="220px"
+        android:src="@drawable/lunch" />
+
+    <View
+        android:layout_width="380px"
+        android:layout_height="2px"
+        android:layout_marginTop="225px"
+        android:background="@color/cf52c2c" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="380px"
+        android:layout_height="80px">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/icon_lunch_version"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/txt_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="V1.0"
+            android:textSize="36px"
+            android:textColor="@color/cf52c2c"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/icon_lunch_version"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="380px"
+        android:layout_height="2px"
+        android:background="@color/cf52c2c" />
+
+</LinearLayout>

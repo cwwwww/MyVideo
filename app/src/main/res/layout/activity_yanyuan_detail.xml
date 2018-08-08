@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c141414"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c1a1a1a"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="436px">
+
+            <com.studio.myvideo.view.CircleImageView
+                android:id="@+id/image_yanyuan_head"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="94px"
+                android:src="@drawable/default_image"
+                app:border_color="#141414"
+                app:border_width="0px" />
+
+            <TextView
+                android:id="@+id/txt_actor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_yanyuan_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="46px"
+                android:text="赵飞燕"
+                android:textColor="@color/cffffff"
+                android:textSize="48px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_yanyuan_detail_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="38px"
+                    android:src="@drawable/icon_detail_back" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:layout_marginTop="72px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_actor_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="@color/cf19e38"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26px"
+                    android:text="等级"
+                    android:textColor="@color/c666666"
+                    android:textSize="26px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:background="@color/c333333" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_actor_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="86/56/83"
+                    android:textColor="@color/c999999"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26px"
+                    android:text="体型"
+                    android:textColor="@color/c666666"
+                    android:textSize="26px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ListView
+        android:id="@+id/list_yanyuan_works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

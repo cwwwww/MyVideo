@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c141414"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_video"
+        android:layout_width="223px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:background="@color/c1a1a1a"
+        android:orientation="vertical"
+        android:paddingBottom="14px">
+
+        <ImageView
+            android:id="@+id/image_video_pic"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/txt_video_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_video_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14px"
+            android:text="系列系列"
+            android:textColor="@color/cffffff"
+            android:textSize="26px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

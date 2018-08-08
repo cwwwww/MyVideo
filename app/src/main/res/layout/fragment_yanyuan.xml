@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c141414">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c1a1a1a"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/grad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:numColumns="5" >
+
+        </GridView>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_yanyuan_title"
+            android:layout_width="match_parent"
+            android:layout_height="54px"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_yanyuan_title"
+                android:layout_width="31px"
+                android:layout_height="17px"
+                android:src="@drawable/detail_icon_selector"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <!--广告位置-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginLeft="6px"
+            android:layout_marginRight="6px"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:src="@drawable/default_image"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_yanyuan_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5px"
+        android:divider="@null">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

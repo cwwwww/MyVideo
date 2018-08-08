@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c141414">
+
+    <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <com.studio.myvideo.view.SGridView
+            android:id="@+id/grid_fuction_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="60px"
+            android:background="@color/c292929" />
+
+        <!--广告添加-->
+        <ImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginLeft="6px"
+            android:layout_marginRight="6px"
+            android:layout_marginTop="30px"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:text="热门标签"
+            android:textColor="@color/cffffff"
+            android:textSize="30px" />
+
+        <com.studio.myvideo.view.SGridView
+            android:id="@+id/list_fuction_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:numColumns="3" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</ScrollView>

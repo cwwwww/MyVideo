@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c141414">
+
+    <com.studio.myvideo.view.ObservableScrollView
+        android:layout_above="@+id/arl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_video_ijk"
+                android:layout_width="match_parent"
+                android:layout_height="750px"
+                android:visibility="visible">
+                <com.kk.taurus.playerbase.widget.BaseVideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:background="@color/c000000" />
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_play_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="422px">
+                    <ImageView
+                        android:id="@+id/image_play_default"
+                        android:layout_width="match_parent"
+                        android:layout_height="422px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_image" />
+                    <ImageView
+                        android:id="@+id/image_play_start"
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:src="@drawable/play_start_1"
+                        android:layout_centerInParent="true"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_detail_back"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="20px"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="22px"
+                        android:layout_height="38px"
+                        android:src="@drawable/icon_detail_back" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="422px">
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="60px">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="30px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_detail_content"
+                            android:layout_width="600px"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="16px"
+                            android:text=""
+                            android:textColor="@color/cffffff"
+                            android:textSize="32px" />
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/ll_detail_show"
+                            android:layout_width="54px"
+                            android:layout_height="54px"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20px"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image_detail_show"
+                                android:layout_width="31px"
+                                android:layout_height="17px"
+                                android:src="@drawable/detail_icon_selector" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/video_length_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="60px"
+                            android:text=""
+                            android:textColor="@color/c999999"
+                            android:textSize="26px" />
+
+                        <TextView
+                            android:id="@+id/video_birth_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="24px"
+                            android:text=""
+                            android:textColor="@color/c999999"
+                            android:textSize="26px" />
+
+                        <TextView
+                            android:id="@+id/video_performer"
+                            android:layout_width="600px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="24px"
+                            android:text=""
+                            android:textColor="@color/c999999"
+                            android:textSize="26px" />
+
+                        <TextView
+                            android:id="@+id/txt_video_sponsor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="24px"
+                            android:text=""
+                            android:textColor="@color/c999999"
+                            android:textSize="26px" />
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="20px"
+                            android:layout_marginTop="34px"
+                            android:orientation="vertical">
+
+                            <com.jude.rollviewpager.RollPagerView
+                                android:id="@+id/roll_video_pic"
+                                android:layout_width="match_parent"
+                                android:layout_height="300px"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/default_image" />
+
+                            <!--这里添加广告 轮播图-->
+                            <ImageView
+                                android:layout_marginLeft="6px"
+                                android:layout_marginRight="6px"
+                                android:scaleType="fitXY"
+                                android:id="@+id/iv_ad"
+                                android:layout_width="match_parent"
+                                android:layout_height="300px"
+                                android:layout_marginTop="30px"
+                                android:src="@drawable/default_image"/>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/txt_video_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/roll_video_pic"
+                                android:layout_marginLeft="20px"
+                                android:layout_marginTop="34px"
+                                android:text="公司目前举办大型活动，特邀各界大咖前来参加"
+                                android:textColor="@color/cf19e38"
+                                android:textSize="26px" />
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_video_content"
+                                android:layout_marginLeft="20px"
+                                android:layout_marginRight="20px"
+                                android:layout_marginTop="26px"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20px"
+                                    android:layout_height="20px"
+                                    android:src="@drawable/home_time_icon" />
+
+                                <TextView
+                                    android:id="@+id/txt_video_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20px"
+                                    android:textColor="@color/c999999"
+                                    android:textSize="22px" />
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+                <View
+                    android:layout_marginTop="60px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:background="@color/c292929" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="60px"
+                    android:text="影片分类"
+                    android:textColor="@color/cffffff"
+                    android:textSize="30px" />
+
+                <ListView
+                    android:id="@+id/list_video_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40px"
+                    android:layout_marginBottom="20px"
+                    android:divider="@null"></ListView>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.studio.myvideo.view.ObservableScrollView>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/arl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_bottom_ad"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:src="@mipmap/icon_ad_pic"/>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ly_add_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:src="@mipmap/icon_ad_delete"
+                android:id="@+id/iv_delete"
+                android:layout_width="30px"
+                android:layout_height="30px" />
+        </LinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

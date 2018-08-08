@@ -1,0 +1,106 @@
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal"
+        android:background="@color/c1a1a1a"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/top_search_image"
+            android:layout_width="62px"
+            android:layout_height="60px"
+            android:padding="10px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_image"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.studio.myvideo.view.MainViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/arl_layout"
+        android:layout_below="@+id/rl_top"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_above="@+id/ll_bottom"
+        android:id="@+id/arl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_bottom_ad"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:src="@mipmap/icon_ad_pic"/>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ly_add_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:src="@mipmap/icon_ad_delete"
+                android:id="@+id/iv_delete"
+                android:layout_width="30px"
+                android:layout_height="30px" />
+        </LinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c1a1a1a"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6px"
+            android:drawableTop="@drawable/home_icon_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/main_bottom_textcolor"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tv_yanyuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6px"
+            android:drawableTop="@drawable/yanyuan_icon_selector"
+            android:gravity="center"
+            android:text="演员"
+            android:textColor="@drawable/main_bottom_textcolor"
+            android:textSize="20px" />
+
+
+        <TextView
+            android:id="@+id/tv_fuction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6px"
+            android:drawableTop="@drawable/fuction_icon_selector"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@drawable/main_bottom_textcolor"
+            android:textSize="20px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
+
