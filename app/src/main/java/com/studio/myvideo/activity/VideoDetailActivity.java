@@ -220,7 +220,7 @@ public class VideoDetailActivity extends BaseCompatActivity implements OnPlayerE
         initBoot();
         init();
         margin = PUtil.dip2px(this, 2);
-        mVideoView = (BaseVideoView) findViewById(R.id.videoView);
+//        mVideoView = (BaseVideoView) findViewById(R.id.videoView);
         PermissionGen.with(this)
                 .addRequestCode(101)
                 .permissions(

@@ -4,14 +4,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Window;
-import android.view.WindowManager;
 
-import com.readystatesoftware.systembartint.SystemBarTintManager;
 import com.studio.myvideo.R;
 import com.studio.myvideo.utils.Constant;
 import com.umeng.analytics.MobclickAgent;

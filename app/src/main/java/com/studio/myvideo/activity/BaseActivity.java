@@ -7,7 +7,6 @@ import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
@@ -24,7 +23,7 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2018/6/13.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends FragmentActivity {
     // 上下文
     protected Context mContext;
     // Log标签
